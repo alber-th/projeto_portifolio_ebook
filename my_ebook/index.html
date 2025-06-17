@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Ebook Interativo</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Menu de Navegação Fixo -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Ebook</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#infancia">Infância</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#familia">Família</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#momentos">Momentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn btn-sm btn-outline-light">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Capa Interativa -->
+    <header class="cover-section d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="display-1 fw-bold">Minha Jornada</h1>
+            <p class="lead">Uma história sobre minha trajetória pessoal e profissional</p>
+            <img src="img/sua-foto.jpg" alt="Sua Foto" class="cover-img rounded-circle mt-4">
+            <div class="mt-5">
+                <a href="#infancia" class="btn btn-light btn-lg scroll-link">
+                    Começar Jornada <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seções do Ebook (substitua os textos e imagens) -->
+    <section id="infancia" class="py-5 section-card">
+        <div class="container">
+            <h2 class="text-center mb-4">Infância e Origens</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="lead">
+                        [SUA INFÂNCIA AQUI] 
+                        Fale sobre onde nasceu, memórias marcantes, 
+                        primeiras experiências e influências.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/infancia.jpg" alt="Infância" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Família e Educação -->
+    <section id="familia" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Família e Educação</h2>
+            <!-- Adicione timeline com Bootstrap -->
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Formação Acadêmica</h3>
+                        <p>[DETALHES DA SUA FORMAÇÃO]</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Família</h3>
+                        <p>[SOBRE SUA FAMÍLIA E INFLUÊNCIAS]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies e Interesses -->
+    <section id="hobbies" class="py-5 section-card">
+        <div class="container">
+            <h2 class="text-center mb-4">Hobbies e Interesses</h2>
+            <div class="row">
+                <!-- Cards de hobbies -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 hover-effect">
+                        <img src="img/hobby1.jpg" class="card-img-top" alt="Hobby 1">
+                        <div class="card-body">
+                            <h5 class="card-title">[HOBBY 1]</h5>
+                            <p class="card-text">[DESCRIÇÃO]</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repita para outros hobbies -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section id="galeria" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Galeria de Fotos</h2>
+            <div class="row gallery-grid">
+                <!-- As imagens serão preenchidas via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensagem Final -->
+    <section id="agradecimento" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Mensagem Final</h2>
+            <div class="col-lg-8 mx-auto">
+                <p class="lead">
+                    [SUA MENSAGEM DE AGRADECIMENTO OU REFLEXÃO FINAL]
+                </p>
+                <button id="backToTop" class="btn btn-primary mt-3">
+                    Voltar ao Topo <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript Personalizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>
